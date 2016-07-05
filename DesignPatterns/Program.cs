@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DesignPatterns.LazyLoading;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -29,9 +30,21 @@ namespace DesignPatterns
             Console.ReadKey();
         }
 
+        public static void FactoryExample()
+        {
+            /* Intent
+             *      Define an interface for creating an object, but let subclasses decide which class to instantiate
+             *      Factory Method lets a class defer instantiation to subclasses
+             */
+        }
+
         static void Main(string[] args)
         {
-            AbstractFactoryExample();
+            //AbstractFactoryExample();
+            var factory = new SimpleCatFactory();
+            var kitty = factory.GetKitty("actual");
+
+            Console.ReadKey();
         }
     }
 }

@@ -44,6 +44,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AbstractFactory.cs" />
+    <Compile Include="LazyLoading\AbstractCat.cs" />
+    <Compile Include="LazyLoading\ActualLazyCat.cs" />
+    <Compile Include="LazyLoading\CatName.cs" />
+    <Compile Include="LazyLoading\CustomLazyCat.cs" />
+    <Compile Include="LazyLoading\SimpleCatFactory.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
